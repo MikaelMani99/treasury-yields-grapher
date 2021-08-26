@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import imageReducer from './imageReducer';
+import yieldsDay from './yieldsDayReducer';
 
 
 export default combineReducers({
-    imageReducer
+    yieldsDay
 })

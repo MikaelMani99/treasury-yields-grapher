@@ -1,5 +1,4 @@
-export const SET_IMAGE = 'SET_IMAGE';
-export const GET_IMAGES = 'GET_IMAGES';
+export const GET_YIELDS_DAY = 'GET_YIELDS_DAY';
 
 
 

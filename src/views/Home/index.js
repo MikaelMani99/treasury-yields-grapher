@@ -1,13 +1,8 @@
 import React from 'react';
-import CalendarPicker from '../../components/CalendarPicker';
-import Container from '../../components/Container';
-import Images from '../../components/ImageList';
+
 const Home = () => {
   return (
-    <Container>
-      <CalendarPicker />
-      <Images />
-    </Container>
+    <h1>This is the Homepage 😀</h1>
   )
 }
 
