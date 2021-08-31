@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Container = ({ children }) => <div className='container'> {children} </div>
+const Container = ({ className, children }) => <div className={className}> {children} </div>
 
 export default Container

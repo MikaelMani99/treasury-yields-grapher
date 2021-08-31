@@ -9,6 +9,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import reportWebVitals from './reportWebVitals';
 import thunk from 'redux-thunk'
 import reducers from './reducers'
+import 'toastr/build/toastr.min.css'
 
 ReactDOM.render(
   <React.StrictMode>

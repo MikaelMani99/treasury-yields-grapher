@@ -8,21 +8,21 @@ import YieldDayGrapher from '../../components/YieldDayGrapher';
 const Yieldsday = () => {
     const dispatch = useDispatch()
     const yieldsDay = useSelector(({ yieldsDay }) => yieldsDay)
-    const [yieldsDayState, setYieldsDayState] = useState({})
+    const [yieldsDayState, setYieldsDayState] = useState([])
 
     // initial load
     useEffect(() => {
-        dispatch(getYieldsDay())
+        dispatch(getYieldsDay("2021-06-01"))
     }, [dispatch])
     // everytime yieldsDay changes
     useEffect(() => {
-        setYieldsDayState(yieldsDay)
+        setYieldsDayState([...yieldsDayState, yieldsDay])
     }, [yieldsDay])
 
     return (
-        <Container>
+        <Container className="flex flex-col items-center">
             <CalendarPicker />
-            <YieldDayGrapher data={ yieldsDayState } />
+            { yieldsDayState.length && <YieldDayGrapher days={ yieldsDayState } /> }
         </Container>
     );
 }
